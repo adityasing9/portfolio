@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aditya Sing - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --accent-color: #084298;
+      --bg-color: #f0f2f5;
+      --text-color: #333;
+      --card-bg: #fff;
+    }
+    .finance-tools {
+  text-align: center;
+  margin-top: 40px;
+}
+.gallery-upload {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#imageInput {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+.finance-tools p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.finance-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --card-bg: #1e1e1e;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      animation: zoomIn 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--primary-color);
+      margin-top: 5px;
+      animation: slideInLeft 1s ease-in-out;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: var(--card-bg);
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border-left: 5px solid var(--primary-color);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    ul li:hover {
+      transform: translateX(10px);
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .btn {
+      background: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent-color);
+      transform: scale(1.05);
+    }
+
+    .toggle-btn, .theme-btns button {
+      background: var(--primary-color);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 5px;
+      transition: background 0.3s ease;
+    }
+
+    .toggle-btn:hover, .theme-btns button:hover {
+      background: var(--accent-color);
+    }
+
+    .theme-btns {
+      position: fixed;
+      top: 70px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { width: 0; }
+      to { width: 60px; }
+    }
+  </style>
+</head>
+<body>
+   
+
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <div class="theme-btns">
+    <button onclick="setTheme('blue')">Blue</button>
+    <button onclick="setTheme('green')">Green</button>
+    <button onclick="setTheme('purple')">Purple</button>
+    <button onclick="setTheme('red')">Red</button>
+  </div>
+
+  <header>
+    <h1 id="typing">Aditya Sing</h1>
+    <p>Web Developer | Designer | Freelancer</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate developer with a knack for creating beautiful and functional websites. I love coding, designing, and turning ideas into digital reality.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Node.js, Express</li>
+      <li>Figma, Adobe XD</li>
+    </ul>
+  </section>
+  
+  
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Portfolio Website</strong> – Personal branding site with smooth scrolling and responsive design.</li>
+      <li><strong>Task Manager</strong> – Full-stack app to manage daily to-do tasks.</li>
+      <li><strong>Blog Platform</strong> – CMS-style blog with Markdown support.</li>
+    </ul>
+  </section>
+  <section class="finance-tools">
+    <h2>Finance Tools</h2>
+    <p>Explore my simple and effective tools built for personal finance management:</p>
+    <div class="finance-links">
+      <a href="one.html" class="btn">💰 Financial Record</a>
+      <a href="split.html" class="btn">📊 Split a Bill</a>
+    </div>
+  </section>
+
+  <section class="gallery-upload">
+    <h2>🖼️ My Gallery</h2>
+    <input type="file" id="imageInput" accept="image/*" multiple />
+    <div class="gallery" id="galleryContainer"></div>
+  </section>
+  
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>Phone: +91 12345 67890</p>
+    <a href="mailto:your@email.com" class="btn">Say Hello</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Aditya Sing. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+    
+    document.getElementById('imageInput').addEventListener('change', function(event) {
+  const gallery = document.getElementById('galleryContainer');
+  const files = event.target.files;
+  for (let file of files) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const img = document.createElement('img');
+      img.src = e.target.result;
+      gallery.appendChild(img);
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+
+    const themes = {
+      blue: {
+        '--primary-color': '#0d6efd',
+        '--accent-color': '#084298'
+      },
+      green: {
+        '--primary-color': '#198754',
+        '--accent-color': '#14532d'
+      },
+      purple: {
+        '--primary-color': '#6f42c1',
+        '--accent-color': '#4b2a91'
+      },
+      red: {
+        '--primary-color': '#dc3545',
+        '--accent-color': '#a71d2a'
+      }
+    };
+
+    function setTheme(theme) {
+  const root = document.documentElement;
+  for (let key in themes[theme]) {
+    root.style.setProperty(key, themes[theme][key]);
+  }
+  localStorage.setItem('selectedTheme', theme);
+}
+
+
+    // Typing effect
+    const text = "Aditya Sing";
+    let i = 0;
+    function typingEffect() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typingEffect, 150);
+      }
+    }
+    document.getElementById("typing").innerHTML = "";
+    typingEffect();
+  </script>
+</body>
+</html>
