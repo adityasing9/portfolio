@@ -36,22 +36,22 @@ export interface AchievementItem {
 
 export const portfolioData = {
   personal: {
-    name: "[YOUR NAME]",
-    shortName: "Jack", // Used for the header logo "Jack." or "[YOUR NAME]."
-    role: "[YOUR ROLE]",
+    name: "Aaditya Singh",
+    shortName: "ADI", // Used for the header logo "Jack." or "[YOUR NAME]."
+    role: "Student",
     headlineLine1: "Designing & Building",
     headlineLine2: "Creative Digital Products",
     tagline: "Creative Developer & Designer specializing in building memorable, high-performance digital experiences.",
-    location: "[YOUR CITY, COUNTRY]",
-    email: "contact@[yourdomain].com",
+    location: "Nepal",
+    email: "to.msg.aadi@gmail.com",
     availableForWork: true,
   },
   
   socials: [
     { name: "GitHub", url: "https://github.com/[YOUR_GITHUB]", icon: "Github" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/[YOUR_LINKEDIN]", icon: "Linkedin" },
-    { name: "Instagram", url: "https://instagram.com/[YOUR_INSTAGRAM]", icon: "Instagram" },
-    { name: "Email", url: "mailto:contact@[yourdomain].com", icon: "Mail" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/aaditya-singh-37594b3ba", icon: "Linkedin" },
+    { name: "Instagram", url: "https://instagram.com/adityasing.np", icon: "Instagram" },
+    { name: "Email", url: "to.msg.aadi@gmail.com", icon: "Mail" },
   ],
 
   about: {
