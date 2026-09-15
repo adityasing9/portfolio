@@ -48,7 +48,7 @@ export const portfolioData = {
   },
   
   socials: [
-    { name: "GitHub", url: "https://github.com/[YOUR_GITHUB]", icon: "Github" },
+    { name: "GitHub", url: "https://github.com/adityasing9", icon: "Github" },
     { name: "LinkedIn", url: "https://linkedin.com/in/aaditya-singh-37594b3ba", icon: "Linkedin" },
     { name: "Instagram", url: "https://instagram.com/adityasing.np", icon: "Instagram" },
     { name: "Email", url: "to.msg.aadi@gmail.com", icon: "Mail" },
