@@ -5,18 +5,18 @@ interface PortraitProps {
 }
 
 export const Portrait: React.FC<PortraitProps> = ({ className = '' }) => {
-  // Try custom user portrait in public/portrait.png first, with fallback to curated high-res developer portrait
-  const [imgSrc, setImgSrc] = useState<string>('/portrait.png');
-  const [hasError, setHasError] = useState(false);
+  // Try custom user portrait in public/portrait.webp or /portrait.png, with fallback
+  const [imgSrc, setImgSrc] = useState<string>('/portrait.webp');
+  const [attempt, setAttempt] = useState<number>(0);
 
-  // Fallback transparent professional creative developer portrait
-  // Note: Unsplash high-res creative developer portrait cut-out or transparent WebP/PNG
   const fallbackUrl = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85";
 
   const handleError = () => {
-    if (!hasError) {
-      setHasError(true);
-      // If local /portrait.png doesn't exist yet, we fall back gracefully
+    if (attempt === 0) {
+      setAttempt(1);
+      setImgSrc('/portrait.png');
+    } else if (attempt === 1) {
+      setAttempt(2);
       setImgSrc(fallbackUrl);
     }
   };
