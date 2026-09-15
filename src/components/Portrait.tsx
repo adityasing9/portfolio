@@ -25,7 +25,7 @@ export const Portrait: React.FC<PortraitProps> = ({ className = '' }) => {
     <div className={`relative flex items-center justify-center ${className}`}>
       {/* Visual Portrait Container */}
       <div className="relative w-[300px] sm:w-[380px] md:w-[440px] lg:w-[490px] xl:w-[530px] aspect-[4/5] flex items-end justify-center">
-        {hasError ? (
+        {attempt >= 2 ? (
           /* High-aesthetic cut-out or styled mask */
           <div className="relative w-full h-full flex items-end justify-center">
             <img
