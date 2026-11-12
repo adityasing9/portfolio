@@ -37,12 +37,12 @@ export interface AchievementItem {
 export const portfolioData = {
   personal: {
     name: "Aaditya Singh",
-    shortName: "ADI", // Used for the header logo "Jack." or "[YOUR NAME]."
-    role: "Student",
-    headlineLine1: "Designing & Building",
-    headlineLine2: "Creative Digital Products",
-    tagline: "Creative Developer & Designer specializing in building memorable, high-performance digital experiences.",
-    location: "Nepal",
+    shortName: "ADI",
+    role: "AI/ML Engineer & Full-Stack Developer",
+    headlineLine1: "Building Intelligent Solutions",
+    headlineLine2: "For Real-World Problems",
+    tagline: "AI/ML Engineer in the making. Full-stack developer. Technology enthusiast.",
+    location: "Bengaluru, Karnataka, India",
     email: "to.msg.aadi@gmail.com",
     availableForWork: true,
   },
@@ -51,60 +51,72 @@ export const portfolioData = {
     { name: "GitHub", url: "https://github.com/adityasing9", icon: "Github" },
     { name: "LinkedIn", url: "https://linkedin.com/in/aaditya-singh-37594b3ba", icon: "Linkedin" },
     { name: "Instagram", url: "https://instagram.com/adityasing.np", icon: "Instagram" },
-    { name: "Email", url: "to.msg.aadi@gmail.com", icon: "Mail" },
+    { name: "Email", url: "mailto:to.msg.aadi@gmail.com", icon: "Mail" },
   ],
 
   about: {
     heading: "About Me",
-    subheading: "A hybrid designer and software engineer merging aesthetics with modern code.",
-    introLarge: "I build digital experiences that live at the intersection of minimal aesthetic design and resilient code architecture.",
+    subheading: "AI/ML Engineering Student at BMSIT & Full-Stack Systems Builder",
+    introLarge: "I build intelligent software systems that solve real-world problems and bridge AI research with production engineering.",
     biography: [
-      "[YOUR ABOUT DESCRIPTION: Replace this with your personal background, how you got started in development or design, and what drives your craft every day.]",
-      "[YOUR PHILOSOPHY: Share your perspective on technology, modern web performance, typography, and user-centric design principles.]"
+      "I am an Artificial Intelligence and Machine Learning engineering student at BMS Institute of Technology and Management (BMSIT), Bengaluru, passionate about building intelligent software, solving real-world problems, and exploring emerging technologies.",
+      "My core technical interests span Retrieval-Augmented Generation (RAG), Full-Stack Systems, Automation, FinTech Security, and Blockchain. I enjoy transforming theoretical concepts into practical applications that combine intelligent systems with resilient architecture.",
+      "I believe in learning by building, continuous experimentation, and creating technology that delivers genuine, real-world value."
     ],
-    education: "[YOUR DEGREE / FIELD OF STUDY, UNIVERSITY NAME]",
-    location: "[YOUR CURRENT LOCATION / TIMEZONE]",
-    interests: "[YOUR INTERESTS, e.g., Creative Coding, Generative Art, UI Architecture, Typography]",
-    currentFocus: "[YOUR CURRENT FOCUS, e.g., Exploring WebGL, React Server Components, and Design Systems]",
+    education: "B.E. in Artificial Intelligence & Machine Learning, BMSIT Bengaluru (2024–2028)",
+    location: "Bengaluru, Karnataka, India",
+    interests: "Artificial Intelligence, LLMs, RAG, FinTech Security, PWAs, Blockchain & Web3",
+    currentFocus: "Developing intelligent agents, vector search pipelines, and offline-capable web applications",
   },
 
   skills: [
     {
-      title: "Frontend Development",
-      description: "Building responsive, fluid, and accessible user interfaces.",
+      title: "AI & Machine Learning",
+      description: "Architecting LLM applications, RAG pipelines, and semantic retrieval.",
       skills: [
-        { name: "HTML5 / Semantic Web" },
-        { name: "Modern CSS / Tailwind CSS" },
-        { name: "JavaScript (ESNext)" },
-        { name: "TypeScript" },
-        { name: "React / Next.js" },
-        { name: "Vue.js / Svelte (Optional)" },
-        { name: "Responsive UI Architecture" },
-        { name: "Web Performance & Core Web Vitals" },
+        { name: "Large Language Models (LLMs)" },
+        { name: "Retrieval-Augmented Gen (RAG)" },
+        { name: "Semantic Embeddings" },
+        { name: "ChromaDB & Vector DBs" },
+        { name: "OpenRouter & Gemini APIs" },
+        { name: "AI Workflow Automation" },
+        { name: "Python / Data Processing" },
       ]
     },
     {
-      title: "Backend & APIs",
-      description: "Scalable services, database design, and resilient backend systems.",
+      title: "Full-Stack & Frontend",
+      description: "Building fluid, responsive, and resilient user interfaces & PWAs.",
       skills: [
-        { name: "Node.js / Express" },
-        { name: "Python / FastAPI" },
-        { name: "REST & GraphQL APIs" },
-        { name: "PostgreSQL / MongoDB" },
-        { name: "Authentication & Security" },
-        { name: "Serverless Architecture" },
+        { name: "React.js / Next.js" },
+        { name: "TypeScript & ESNext" },
+        { name: "Tailwind CSS" },
+        { name: "Progressive Web Apps (PWA)" },
+        { name: "HTML5 / Responsive Design" },
+        { name: "State Management & Vite" },
       ]
     },
     {
-      title: "Design & Tools",
-      description: "Tooling, prototyping, version control, and design systems.",
+      title: "Backend & Systems",
+      description: "Scalable APIs, authentication, and database architecture.",
       skills: [
-        { name: "Figma & UI Prototyping" },
+        { name: "Node.js / Express.js" },
+        { name: "FastAPI / Flask" },
+        { name: "PostgreSQL & MySQL" },
+        { name: "MongoDB & Supabase" },
+        { name: "RESTful APIs" },
+        { name: "JWT Authentication & Security" },
+      ]
+    },
+    {
+      title: "Tools, Web3 & DevOps",
+      description: "Smart contracts, containerization, and developer workflows.",
+      skills: [
         { name: "Git & GitHub Workflow" },
-        { name: "VS Code & Developer Tooling" },
-        { name: "Design Systems & Tokens" },
-        { name: "Docker & CI/CD Pipelines" },
-        { name: "Testing (Jest / Vitest / Playwright)" },
+        { name: "Docker & Cloud Deployment" },
+        { name: "Solidity & Hardhat (Web3)" },
+        { name: "Linux (Ubuntu / Kali Linux)" },
+        { name: "Vercel & Render" },
+        { name: "Testing & Architecture" },
       ]
     }
   ] as SkillCategory[],
@@ -113,85 +125,97 @@ export const portfolioData = {
     {
       id: "project-1",
       number: "01",
-      title: "[PROJECT 01: FEATURED DIGITAL PLATFORM]",
-      category: "Full Stack / Web Application",
-      description: "[PROJECT DESCRIPTION: A flagship modern web application featuring clean editorial layouts, real-time data sync, and fluid interactive transitions.]",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
-      githubUrl: "https://github.com/[YOUR_GITHUB]/[PROJECT_REPO_1]",
-      liveUrl: "https://[project-one-demo].com",
-      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80",
+      title: "StudyAI — AI-Powered Document Learning Assistant",
+      category: "AI/ML & Document Intelligence",
+      description: "An intelligent learning platform featuring end-to-end RAG architecture, semantic vector retrieval with ChromaDB, chunking pipelines, and grounded Q&A over complex documents.",
+      technologies: ["Python", "FastAPI", "ChromaDB", "Sentence Transformers", "React", "Tailwind CSS"],
+      githubUrl: "https://github.com/adityasing9",
+      liveUrl: "https://github.com/adityasing9",
+      image: "/projects/project_studyai_rag_1794436802603.jpg",
       featured: true,
     },
     {
       id: "project-2",
       number: "02",
-      title: "[PROJECT 02: CREATIVE DESIGN SYSTEM]",
-      category: "UI/UX & Component Library",
-      description: "[PROJECT DESCRIPTION: A minimal, accessible design system engineered with precision typography, dark/light theme switching, and modular tokens.]",
-      technologies: ["TypeScript", "React", "Storybook", "Tailwind CSS", "Figma"],
-      githubUrl: "https://github.com/[YOUR_GITHUB]/[PROJECT_REPO_2]",
-      liveUrl: "https://[project-two-demo].com",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+      title: "IntentLock Commerce — AI Shopping Agent & Security Firewall",
+      category: "AI Agents & FinTech Security",
+      description: "AI personal shopping agent with strict deterministic validation gates and an intent security firewall intercepting transactions before reaching payment gateways (PayPal AI Hackathon).",
+      technologies: ["Node.js", "Express", "OpenAI API", "PayPal REST API", "React", "Tailwind CSS"],
+      githubUrl: "https://github.com/adityasing9",
+      liveUrl: "https://github.com/adityasing9",
+      image: "/projects/project_intentlock_firewall_1794436803519.jpg",
       featured: true,
     },
     {
       id: "project-3",
       number: "03",
-      title: "[PROJECT 03: CLOUD INTELLIGENCE DASHBOARD]",
-      category: "Analytics & Data Visualization",
-      description: "[PROJECT DESCRIPTION: High-performance dashboard visualizer providing actionable insights, telemetry analytics, and interactive charts.]",
-      technologies: ["React", "D3.js", "FastAPI", "Tailwind CSS", "Docker"],
-      githubUrl: "https://github.com/[YOUR_GITHUB]/[PROJECT_REPO_3]",
-      liveUrl: "https://[project-three-demo].com",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
-      featured: false,
+      title: "SettleHub — Local-First Expense Management & Settlement PWA",
+      category: "FinTech & Progressive Web App",
+      description: "Local-first expense splitting PWA with 100% offline capability via Dexie.js & IndexedDB, custom group split calculations, and greedy graph-based debt minimization algorithms.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Dexie.js", "IndexedDB", "Workbox PWA"],
+      githubUrl: "https://github.com/adityasing9/SettleHub",
+      liveUrl: "https://github.com/adityasing9/SettleHub",
+      image: "/projects/project_settlehub_pwa_1794436803690.jpg",
+      featured: true,
     },
     {
       id: "project-4",
       number: "04",
-      title: "[PROJECT 04: E-COMMERCE EDITORIAL EXPERIENCE]",
-      category: "Creative Commerce / Web Experience",
-      description: "[PROJECT DESCRIPTION: An editorial luxury commerce storefront featuring micro-animations, seamless checkout, and image optimization.]",
-      technologies: ["Next.js", "Stripe API", "Tailwind CSS", "GraphQL"],
-      githubUrl: "https://github.com/[YOUR_GITHUB]/[PROJECT_REPO_4]",
-      liveUrl: "https://[project-four-demo].com",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+      title: "HackPass — QR-Based College Event Attendance Management",
+      category: "Event Management & Computer Vision",
+      description: "High-throughput ticketing and check-in system with encrypted dynamic QR verification, real-time sync, and rapid entry analytics for college technical symposiums.",
+      technologies: ["FastAPI", "Python", "OpenCV", "PostgreSQL", "React", "Tailwind CSS"],
+      githubUrl: "https://github.com/adityasing9",
+      liveUrl: "https://github.com/adityasing9",
+      image: "/projects/project_kinetix_canvas_1794435571099.jpg",
+      featured: false,
+    },
+    {
+      id: "project-5",
+      number: "05",
+      title: "Decrypto — Blockchain-Based Sealed-Bid Auction Application",
+      category: "Web3 & Smart Contracts",
+      description: "Decentralized sealed-bid auction platform on Ethereum featuring cryptographic bid commitments, reveal phases, and automated escrow settlement via Solidity smart contracts.",
+      technologies: ["Solidity", "Hardhat", "Ethers.js", "React", "IPFS", "Ethereum"],
+      githubUrl: "https://github.com/adityasing9",
+      liveUrl: "https://github.com/adityasing9",
+      image: "/projects/project_decrypto_blockchain_1794436804789.jpg",
       featured: false,
     }
   ] as ProjectItem[],
 
   timeline: [
     {
-      year: "2024 — PRESENT",
-      title: "[SENIOR DEVELOPER / DESIGNER ROLE]",
-      organization: "[COMPANY / ORGANIZATION NAME]",
-      type: "experience",
-      description: "[DESCRIPTION: Leading frontend architecture, designing intuitive digital experiences, and collaborating with cross-functional product teams.]",
-      highlights: [
-        "[Key achievement or responsibility in this role]",
-        "[Performance optimization or architectural achievement]"
-      ]
-    },
-    {
-      year: "2022 — 2024",
-      title: "[FULL STACK SOFTWARE DEVELOPER]",
-      organization: "[COMPANY / CLIENT NAME]",
-      type: "experience",
-      description: "[DESCRIPTION: Developed scalable web applications, designed RESTful APIs, and created responsive UI component libraries.]",
-      highlights: [
-        "[Spearheaded migration to modern React/TypeScript stack]",
-        "[Collaborated on end-to-end user experience enhancements]"
-      ]
-    },
-    {
-      year: "2018 — 2022",
-      title: "[BACHELOR OF SCIENCE IN COMPUTER SCIENCE / DESIGN]",
-      organization: "[UNIVERSITY / INSTITUTE NAME]",
+      year: "2024 — 2028",
+      title: "Bachelor of Engineering in Artificial Intelligence & Machine Learning",
+      organization: "BMS Institute of Technology and Management (BMSIT), Bengaluru",
       type: "education",
-      description: "[DESCRIPTION: Specialized in software engineering, human-computer interaction, algorithms, and interactive media systems.]",
+      description: "Specializing in AI/ML algorithms, vector embeddings, full-stack systems, retrieval architectures, and software engineering.",
       highlights: [
-        "[Dean's List / Honors recognition]",
-        "[Capstone project in modern web technologies]"
+        "Focus on Retrieval-Augmented Generation (RAG) and intelligent agent architectures",
+        "Building real-world software across FinTech, AI security, and decentralized applications"
+      ]
+    },
+    {
+      year: "2024",
+      title: "PayPal AI Hackathon — AI Agent Commerce & Security Architecture",
+      organization: "PayPal & Hackathon Community",
+      type: "experience",
+      description: "Architected IntentLock Commerce, an autonomous AI shopping agent with deterministic security boundaries and intent verification before transaction execution.",
+      highlights: [
+        "Engineered intelligent payment security firewall protecting against prompt injection and malicious tool misuse",
+        "Integrated PayPal REST API for automated, policy-enforced checkout workflows"
+      ]
+    },
+    {
+      year: "2023 — PRESENT",
+      title: "Applied AI & Full-Stack Product Engineering",
+      organization: "Independent Software Development & Open Source",
+      type: "experience",
+      description: "Developing open-source applications, local-first PWAs (SettleHub), and document intelligence systems (StudyAI).",
+      highlights: [
+        "Designed graph-based net debt simplification algorithm for multi-party group settlements",
+        "Implemented offline-first sync pipelines with IndexedDB and service workers"
       ]
     }
   ] as TimelineItem[],
@@ -199,24 +223,24 @@ export const portfolioData = {
   achievements: [
     {
       year: "2024",
-      title: "[NAME OF CERTIFICATION OR AWARD]",
-      organization: "[ISSUING BODY / INSTITUTION]",
-      category: "Certification",
-      description: "[Brief overview of requirements, skill mastery, or recognition criteria achieved.]",
-    },
-    {
-      year: "2023",
-      title: "[HACKATHON OR COMPETITION AWARD]",
-      organization: "[ORGANIZING EVENT / SPONSOR]",
+      title: "PayPal AI Hackathon Project Showcase",
+      organization: "PayPal AI Hackathon",
       category: "Competition",
-      description: "[Winner / Runner-Up out of X teams building an innovative digital prototype.]",
+      description: "Engineered IntentLock Commerce, featuring an intelligent payment security firewall intercepting autonomous AI agent actions.",
     },
     {
-      year: "2022",
-      title: "[PROFESSIONAL CERTIFICATION / HONOR]",
-      organization: "[CLOUD OR TECH PROVIDER, e.g. AWS / Google / Meta]",
-      category: "Accreditation",
-      description: "[Verified proficiency in modern cloud architecture or frontend engineering.]",
+      year: "2024",
+      title: "StudyAI RAG Document Intelligence Platform",
+      organization: "Applied AI Systems",
+      category: "AI/ML Project",
+      description: "Implemented high-accuracy semantic retrieval and grounded reasoning over dense technical documents using vector embeddings and ChromaDB.",
+    },
+    {
+      year: "2024",
+      title: "SettleHub Offline-First Financial Engine",
+      organization: "FinTech & Web Systems",
+      category: "PWA Milestone",
+      description: "Published a progressive web application solving multi-party debt settlement with graph debt minimization algorithms and zero server latency.",
     }
   ] as AchievementItem[],
 };
